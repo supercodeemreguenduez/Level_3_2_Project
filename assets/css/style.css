@@ -1,0 +1,239 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+
+/* === GENRAL - STYLE === */
+/* Assets:
+Font: Roboto
+Farben: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000 */
+
+/* https://nekocalc.com/de/px-zu-rem-umrechner */
+/* https://web-development.space/tools/px-to-vw/ */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    color: #0b0c17;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* === HEADER === */
+h2 {
+    font-size: 40px; 
+    font-weight: 900;
+    width: 6em;
+    display: inline-block;
+    margin: 0.1vh 10vh 6vw 12vw;
+}
+
+/* Logo & BACKGROUND IMG ANIMATION*/
+header>img {
+    width: 25px;
+    margin: 30px 10px 0 0;
+    position: fixed;
+}
+
+header {
+    background: url("../img/ilustracion_people.png"), url("../img/ilustracion1.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 100% 0%, 100% 0%;
+    margin-left: 30px;
+    animation: TheFall 6s ease-in infinite alternate;
+}
+
+@keyframes TheFall {
+    0% {
+        background-position: 100% 0%, 100% 0%;
+    }
+
+    50% {
+        background-position: 100% 200%, 100% 0%;
+    }
+
+    100% {
+        background-position: 100% 0%, 100% 0%;
+    }   
+}
+
+header div:nth-of-type(1) {
+    display: inline-block;
+    margin: 33px 0 0 55px;
+}
+
+header div:nth-of-type(1) p:nth-of-type(1) {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+header div:nth-of-type(2) {
+    margin-left: 80px;
+}
+
+header div:nth-of-type(2) h1 {
+    font-size: 80px;
+}
+
+header div:nth-of-type(2) h1:nth-of-type(1) {
+    margin-top: 20vh;
+}
+
+header div:nth-of-type(2) h1:nth-of-type(2) {
+    margin-bottom: 20vh;
+}
+
+header div:nth-of-type(2) p:nth-of-type(1) {
+    font-size: 30px;
+    width: 40vw;
+}
+
+header div:nth-of-type(2) p:nth-of-type(1) img {
+    width: 28px;
+}
+
+header div:nth-of-type(2) p:nth-of-type(2) {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    color: #ff3571;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* === MAIN - SECTION === */
+
+section:nth-of-type(1) {
+    margin: 0 10vw;
+}
+
+section:nth-of-type(1) article:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20vh;
+}
+
+main section:nth-of-type(1) article:nth-of-type(1) h2 {
+    width: 300px;
+}
+
+main section:nth-of-type(1) article:nth-of-type(1) p {
+    font-size: 34px;
+    font-weight: 300;
+    width: 680px;
+}
+
+main section:nth-of-type(1) article:nth-of-type(1) h2 img {
+    width: 50px;
+}
+
+main section:nth-of-type(1)>h2:nth-of-type(1) {
+    margin: 20vh 0;
+    width: 45vw;
+}
+
+main section:nth-of-type(1) article:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main section:nth-of-type(1) article:nth-of-type(2) div {
+    width: 33vw;
+    line-height: 44px;
+    margin-bottom: 10vh;
+}
+
+main section:nth-of-type(1) article:nth-of-type(2) h3 {
+    font-size: 24px;
+}
+
+main section:nth-of-type(1) article:nth-of-type(2) p {
+    font-size: 24px;
+    margin-left: 50px;
+}
+
+main section:nth-of-type(1) article:nth-of-type(2) div h3 img {
+    width: 30px;
+    margin-right: 20px;
+
+}
+
+main section:nth-of-type(1)>h2:nth-of-type(2) {
+    text-align: center;
+    margin-bottom: 7vh;
+    margin: 8vh 0 10vh 0;
+
+}
+
+main section:nth-of-type(1)>p {
+    font-size: 34px;
+    width: 50vw;
+    margin: 0 auto 20vh auto;
+    text-align: center;
+}
+
+/* === ARTICLE === */
+
+section:nth-of-type(2) {
+    margin: 0 10vw;
+}
+
+section:nth-of-type(2) article {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20vh;
+}
+
+section:nth-of-type(2) article>img {
+    width: 40vh;
+    height: 40vh;
+}
+
+section:nth-of-type(2) article div {
+    width: 47%;
+}
+
+section:nth-of-type(2) article div p:nth-of-type(1) {
+    font-size: 100px;
+    font-weight: 900;
+    color: #dddddd;
+    margin-bottom: 50px;
+}
+
+section:nth-of-type(2) article div img {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+section:nth-of-type(2) article h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+section:nth-of-type(2) article p:nth-of-type(2) {
+    font-size: 1.5rem;
+
+
+
+/* === Footer === */
+
+footer div {
+    display: flex;
+    justify-content: center;
+
+}
